@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Hiking</title>
+    <link href="styles.css" rel="stylesheet" type="text/css" />
+  </head>
+  <body>
+    <button class="theme">Dark theme</button>
+    <div class="container">
+      <div class="header">
+        <h1>Hiking</h1>
+
+        <h2>Happy trails!</h2>
+      </div>
+
+      <p class="p0">
+        Hiking is a long, vigorous walk, usually on trails or footpaths in the
+        countryside. Walking for pleasure developed in Europe during the
+        eighteenth century.Religious pilgrimages have existed much longer but
+        they involve walking long distances for a spiritual purpose associated
+        with specific religions. "Hiking" is the preferred term in Canada and
+        the United States; the term "walking" is used in these regions for
+        shorter, particularly urban walks. In the United Kingdom and the
+        Republic of Ireland, the word "walking" describes all forms of walking,
+        whether it is a walk in the park or backpacking in the Alps. The word
+        hiking is also often used in the UK, along with rambling, hillwalking,
+        and fell walking (a term mostly used for hillwalking in northern
+        England). The term bushwalking is endemic to Australia, having been
+        adopted by the Sydney Bush Walkers club in 1927. In New Zealand a long,
+        vigorous walk or hike is called tramping. It is a popular activity with
+        numerous hiking organizations worldwide, and studies suggest that all
+        forms of walking have health benefits.<br />
+      </p>
+      <a
+        href="https://www.wildjunket.com/most-famous-walking-trails-in-the-world/"
+        target="_blank"
+        class="hike-trails-web"
+        >Find popular hikes trails</a
+      >
+      <div class="images">
+        <a
+          href="https://www.alltrails.com/trail/canada/british-columbia/deeks-lake"
+          target="_blank"
+        >
+          <img
+            src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/067/948/original/hiking-survival-day-hike-alone.jpg?1676632622"
+            alt="hiking in a forest"
+            class="hiking-images"
+        /></a>
+        <a
+          href="https://italybeyondtheobvious.com/hiking-in-italy/"
+          target="_blank"
+        >
+          <img
+            src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/067/949/original/lukas-l-jSjgQmaQtVQ-unsplash-1272x848.jpg?1676632675"
+            alt="hiking in the mountains"
+            class="hiking-images"
+        /></a>
+        <a href="https://www.pnt.org/" target="_blank">
+          <img
+            src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/067/950/original/PNT-Pasayten-Wilderness_Tyler-Yates.jpg?1676632733"
+            alt="hiking in the nature"
+            class="hiking-images"
+        /></a>
+        <a
+          href="https://www.nps.gov/zion/planyourvisit/thenarrows.htm"
+          target="_blank"
+        >
+          <img
+            src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/067/956/original/GettyImages-623118826-654f4381b3494e8bb25dc8f17f2da3dc.jpg?1676640261"
+            alt="hiking in a river"
+            class="hiking-images"
+        /></a>
+      </div>
+
+      <h3><strong>Coded by Nezhlya Emin</strong></h3>
+    </div>
+    <script>
+      function changeTheme() {
+        let body = document.querySelector("body");
+
+        if (body.classList.contains("dark")) {
+          body.classList.remove("dark");
+        } else {
+          body.classList.add("dark");
+        }
+      }
+
+      let themeButton = document.querySelector("button.theme");
+      themeButton.addEventListener("click", changeTheme);
+
+      function bookHike() {
+        let name = prompt("What is your name?");
+        let email = prompt("What is your email address?");
+        alert("Thank you " + name + "! We will be in touch by " + email);
+      }
+
+      let bookButton = document.querySelector("button.book");
+      bookButton.addEventListener("click", bookHike);
+    </script>
+  </body>
+</html>

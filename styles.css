@@ -1,0 +1,129 @@
+ body {
+        background: radial-gradient(
+          788px at 0.7% 3.4%,
+          rgb(164, 231, 192) 0%,
+          rgb(255, 255, 255) 90%
+        );
+      }
+      h1 {
+        text-align: center;
+        font-size: 100px;
+        opacity: none;
+        background-color: white;
+        opacity: 50%;
+        margin: 0;
+        overflow: hidden;
+      }
+
+      h2 {
+        text-align: center;
+        font-size: 30px;
+        background: white;
+        opacity: 50%;
+        margin: 0;
+        overflow: hidden;
+      }
+
+      img {
+        width: 400px;
+        max-width: 100%;
+        border-radius: 10px;
+        margin: 0 auto;
+      }
+      h3 {
+        text-align: center;
+      }
+      .header {
+        background: url("https://s3.amazonaws.com/shecodesio-production/uploads/files/000/067/985/original/people_hiking_walk_in_woods_KLT_header_image.jpg?1676647652");
+        background-repeat: no-repeat;
+        background-size: cover;
+        border-radius: 20px;
+        padding: 30px 30px;
+      }
+      .hiking-images {
+        width: 700px;
+      }
+      .hiking-images:hover {
+        transform: scale(1.2);
+        filter: contrast(80%);
+        border-style: solid;
+        border-color: #f5ffcb;
+        transition: all 200ms ease-in-out;
+        
+      }
+      .hike-trails-web {
+        display: block;
+        margin: 20px auto;
+        text-decoration: none;
+        color: black;
+        font-size: 25px;
+        font-weight: 600;
+        text-align: center;
+      }
+      a.hike-trails-web:hover {
+        text-decoration: underline;
+      }
+
+      .theme {
+        display: block;
+        margin: 10px auto;
+        font-size: 20px;
+        font-weight: 200;
+        border-radius: 10px;
+        padding: 15px 20px;
+        color: white;
+        background-color: black;
+      }
+      .theme:hover {
+        color: black;
+        background: white;
+      }
+
+      .p0 {
+        text-indent: 2em;
+        margin: 20px 20px;
+        padding-left: 20px 20px;
+        color: black;
+        border-radius: 10px;
+        font-size: 25px;
+      }
+      .header {
+        text-align: center;
+        font-weight: 600;
+      }
+      .container {
+        display: block;
+        max-width: 100%;
+        margin: 60px 150px;
+        padding: 40px 70px;
+        background-color: white;
+        border-radius: 20px;
+        font-family: monospace;
+      }
+      .images {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-gap: 30px;
+        margin: 50px 0;
+        justify-items: center;
+      }
+      body.dark {
+        background: linear-gradient(
+          114.3deg,
+          rgb(19, 126, 57) 0.2%,
+          rgb(8, 65, 91) 68.5%
+        );
+      }
+      .dark .container {
+        background-color: rgb(0, 0, 0, 0.5);
+      }
+
+      .dark .p0 {
+        color: rgb(254, 254, 254, 0.5);
+      }
+      .dark .hike-trails-web {
+        color: rgb(255, 255, 255, 0.5);
+      }
+      .dark h3 {
+        color: white;
+      }
